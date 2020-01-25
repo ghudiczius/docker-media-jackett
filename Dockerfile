@@ -16,4 +16,4 @@ VOLUME /data /downloads
 WORKDIR /home/jackett
 
 EXPOSE 9117
-ENTRYPOINT ["jackett", "--DataFolder=/data"]
+ENTRYPOINT ["/opt/jackett/jackett", "--DataFolder=/data"]
