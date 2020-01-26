@@ -9,7 +9,8 @@ RUN apt-get update --quiet && \
     mkdir /data /downloads /opt/jackett && \
     curl --location --output /tmp/jackett.tar.gz --silent "https://github.com/Jackett/Jackett/releases/download/v${VERSION}/Jackett.Binaries.LinuxAMDx64.tar.gz" && \
     tar xzf /tmp/jackett.tar.gz --directory=/opt/jackett --strip-components=1 && \
-    chown --recursive 1000:1000 /data /downloads /opt/jackett
+    chown --recursive 1000:1000 /data /downloads /opt/jackett && \
+    rm /tmp/jackett.tar.gz
 
 USER 1000
 VOLUME /data /downloads
