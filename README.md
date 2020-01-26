@@ -1,6 +1,6 @@
 # Jackett
 
-Simple docker image for Jackett without any bloat, built on the official debian image. Jackett runs as user `jackett` with `uid` and `gid` 9117.
+Simple docker image for Jackett without any bloat, built on the official debian image. Jackett runs as user `jackett` with `uid` and `gid` `1000` and listens on port `9117`.
 
 ## Usage
 
