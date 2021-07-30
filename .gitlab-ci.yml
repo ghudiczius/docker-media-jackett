@@ -26,9 +26,9 @@ kaniko:
         }
       }
     }" > /kaniko/.docker/config.json
-  - cat /kaniko/.docker/config.json
   - /kaniko/executor --build-arg="VERSION=${VERSION}" --context="${CI_PROJECT_DIR}" --destination="${CI_REGISTRY_IMAGE}:${VERSION}" --destination="${DOCKER_HUB_IMAGE}:${VERSION}" --dockerfile="${CI_PROJECT_DIR}/Dockerfile"
-  - echo "Successfully publised new version ${CI_REGISTRY_IMAGE}:${VERSION}"
+  - echo "Successfully publised new image ${CI_REGISTRY_IMAGE}:${VERSION}"
+  - echo "Successfully publised new image ${DOCKER_HUB_IMAGE}:${VERSION}"
   stage: build
   tags:
   - kubernetes
