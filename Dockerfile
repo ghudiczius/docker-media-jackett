@@ -1,4 +1,4 @@
-FROM debian:10.2
+FROM debian:10.13
 
 ARG VERSION
 
