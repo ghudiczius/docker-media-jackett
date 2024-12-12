@@ -4,13 +4,13 @@ ARG VERSION
 
 # renovate: release=bookworm depName=curl
 ENV CURL_VERSION=7.88.1-10+deb12u8
-# renovate: release=bookworm depName=libicu73
+# renovate: release=bookworm depName=libicu72
 ENV LIBICU_VERSION=0
 
 RUN apt-get update --quiet && \
     apt-get --assume-yes --quiet install \
         curl="${CURL_VERSION}" \
-        libicu73="${LIBICU_VERSION}" && \
+        libicu72="${LIBICU_VERSION}" && \
     groupadd --gid=1000 jackett && \
     useradd --gid=1000 --home-dir=/opt/jackett --no-create-home --shell /bin/bash --uid 1000 jackett && \
     mkdir /data /downloads /opt/jackett && \
