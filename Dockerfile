@@ -5,7 +5,7 @@ ARG VERSION
 # renovate: release=bookworm depName=curl
 ENV CURL_VERSION=7.88.1-10+deb12u8
 # renovate: release=bookworm depName=libicu72
-ENV LIBICU_VERSION=0
+ENV LIBICU_VERSION=72.1-3
 
 RUN apt-get update --quiet && \
     apt-get --assume-yes --quiet install \
