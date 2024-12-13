@@ -20,5 +20,22 @@
       "VERSION: \"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
     ],
     "versioningTemplate": "semver"
+  }],
+  "packageRules": [{
+    "autoApprove": true,
+    "matchUpdateTypes": [
+      "major"
+    ]
+  }, {
+    "automerge": true,
+    "matchUpdateTypes": [
+      "minor"
+    ]
+  }, {
+    "automerge": true,
+    "automergeType": "branch",
+    "matchUpdateTypes": [
+      "patch"
+    ]
   }]
 }
