@@ -5,7 +5,7 @@ Simple docker image for Jackett without any bloat, built on the official debian 
 ## Usage
 
 ```sh
-docker run --rm registry.gitlab.jmk.hu/media/jackett:<VERSION> \
+docker run --rm ghudiczius/jackett:<VERSION> \
   -p 9117:9117 \
   -v path/to/data:/data \
   -v path/to/downloads:/downloads
@@ -14,7 +14,7 @@ docker run --rm registry.gitlab.jmk.hu/media/jackett:<VERSION> \
 or
 
 ```sh
-docker run --rm ghudiczius/jackett:<VERSION> \
+docker run --rm registry.gitlab.jmk.hu/media/jackett:<VERSION> \
   -p 9117:9117 \
   -v path/to/data:/data \
   -v path/to/downloads:/downloads
