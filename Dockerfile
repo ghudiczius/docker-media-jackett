@@ -2,9 +2,9 @@ FROM debian:13.0
 
 ARG VERSION
 
-# renovate: release=bookworm depName=curl
+# renovate: release=trixie depName=curl
 ENV CURL_VERSION=7.88.1-10+deb12u12
-# renovate: release=bookworm depName=libicu72
+# renovate: release=trixie depName=libicu72
 ENV LIBICU_VERSION=72.1-3
 
 RUN apt-get update --quiet && \
