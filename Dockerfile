@@ -10,7 +10,7 @@ ENV LIBICU_VERSION=76.1-4
 RUN apt-get update --quiet && \
     apt-get --assume-yes --quiet install \
         curl="${CURL_VERSION}" \
-        libicu72="${LIBICU_VERSION}" && \
+        libicu76="${LIBICU_VERSION}" && \
     groupadd --gid=1000 jackett && \
     useradd --gid=1000 --home-dir=/opt/jackett --no-create-home --shell /bin/bash --uid 1000 jackett && \
     mkdir /data /downloads /opt/jackett && \
