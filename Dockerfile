@@ -5,7 +5,7 @@ ARG VERSION
 # renovate: release=trixie depName=curl
 ENV CURL_VERSION=7.88.1-10+deb12u12
 # renovate: release=trixie depName=libicu76
-ENV LIBICU_VERSION=72.1-3
+ENV LIBICU_VERSION=76.1-4
 
 RUN apt-get update --quiet && \
     apt-get --assume-yes --quiet install \
