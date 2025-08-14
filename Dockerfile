@@ -3,7 +3,7 @@ FROM debian:13.0
 ARG VERSION
 
 # renovate: release=trixie depName=curl
-ENV CURL_VERSION=7.88.1-10+deb12u12
+ENV CURL_VERSION=8.14.1-2
 # renovate: release=trixie depName=libicu76
 ENV LIBICU_VERSION=76.1-4
 
